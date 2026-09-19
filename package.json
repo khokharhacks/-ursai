@@ -1,0 +1,36 @@
+{
+  "name": "ursai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "URSAI construction workforce and project management platform",
+  "packageManager": "pnpm@10.28.1",
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.0.0"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "dev:web": "pnpm --filter @ursai/web dev",
+    "dev:api": "pnpm --filter @ursai/api dev",
+    "dev:mobile": "pnpm --filter @ursai/mobile start",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.35.0",
+    "@types/node": "22.18.1",
+    "eslint": "9.35.0",
+    "eslint-config-prettier": "10.1.8",
+    "globals": "16.3.0",
+    "prettier": "3.6.2",
+    "turbo": "2.5.6",
+    "typescript": "5.9.2",
+    "typescript-eslint": "8.42.0",
+    "vitest": "3.2.4"
+  }
+}

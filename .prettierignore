@@ -1,0 +1,11 @@
+.expo
+.next
+coverage
+dist
+node_modules
+pnpm-lock.yaml
+packages/database/migrations
+
+# Source planning documents retain their reviewed formatting
+IMPLEMENTATION_PLAN.md
+ursai-technical-blueprint.md
