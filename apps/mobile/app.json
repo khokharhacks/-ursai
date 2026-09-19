@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "URSAI",
+    "slug": "ursai-mobile",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "ursai",
+    "userInterfaceStyle": "light",
+    "plugins": ["expo-router"],
+    "experiments": { "typedRoutes": true },
+    "ios": { "supportsTablet": true, "bundleIdentifier": "net.ursai.mobile" },
+    "android": { "package": "net.ursai.mobile" },
+    "web": { "bundler": "metro" }
+  }
+}

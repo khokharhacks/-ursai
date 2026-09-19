@@ -1,0 +1,7 @@
+{
+  "extends": "../../packages/tsconfig/react-native.json",
+  "compilerOptions": {
+    "types": ["react"]
+  },
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
+}
